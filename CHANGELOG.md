@@ -1,26 +1,20 @@
-# Changelog
+# Change Log
 
-## [0.0.2] - 2024-03-22
+## [0.0.3] - 2024-03-22
+### Corrigido
+- Correção do problema com o salvamento duplo não funcionando
+- Adicionado logs detalhados para melhor diagnóstico
+- Melhorada a detecção de eventos de salvamento
+- Atualizada a descrição da extensão
 
+## [0.0.2] - 2024-03-21
 ### Adicionado
-- Salvamento duplo rápido (dois Ctrl+S em menos de 3 segundos)
-- Novo formato de data brasileiro nos arquivos de backup (DD/MM/AAAA HH:MM:SS)
-- Configuração de tempo limite entre salvamentos
+- Suporte para salvamento duplo rápido (Ctrl+S duas vezes)
+- Configuração de tempo limite para salvamento duplo
 - Notificações mais informativas
 
-### Alterado
-- Formato do nome dos arquivos de backup
-- Comportamento do backup automático
-- Mensagens de notificação
-
-### Removido
-- Backup automático em cada salvamento
-- Formato antigo de timestamp
-
 ## [0.0.1] - 2024-03-21
-
 ### Adicionado
-- Backup automático ao salvar arquivos
-- Pasta de backup configurável
+- Funcionalidade inicial de backup
 - Comandos para habilitar/desabilitar
-- Notificações de status 
+- Configurações básicas 

@@ -1,8 +1,8 @@
 {
   "name": "salva-trampo",
   "displayName": "Salva Trampo",
-  "description": "Extensão para salvar automaticamente o trabalho em andamento",
-  "version": "0.0.2",
+  "description": "Backup automático ao salvar duas vezes (Ctrl+S) rapidamente - Versão Atualizada",
+  "version": "0.0.3",
   "publisher": "anderson-soubar",
   "author": {
     "name": "Anderson Soubar",
@@ -35,8 +35,7 @@
   ],
   "icon": "images/icon.png",
   "activationEvents": [
-    "onCommand:salvaTrampo.enableAutoSave",
-    "onCommand:salvaTrampo.disableAutoSave"
+    "onStartupFinished"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -56,7 +55,9 @@
         "salvaTrampo.doubleSaveThreshold": {
           "type": "number",
           "default": 3000,
-          "description": "Tempo limite em milissegundos para detectar salvamento duplo"
+          "description": "Tempo limite em milissegundos para detectar salvamento duplo",
+          "minimum": 1000,
+          "maximum": 10000
         }
       }
     }
