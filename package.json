@@ -1,0 +1,71 @@
+{
+  "name": "salva-trampo",
+  "displayName": "Salva Trampo",
+  "description": "Extensão para salvar automaticamente o trabalho em andamento",
+  "version": "0.0.2",
+  "publisher": "anderson-soubar",
+  "author": {
+    "name": "Anderson Soubar",
+    "email": "andersonrecreio@hotmail.com"
+  },
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anderson-soubar/salva-trampo"
+  },
+  "bugs": {
+    "url": "https://github.com/anderson-soubar/salva-trampo/issues"
+  },
+  "homepage": "https://github.com/anderson-soubar/salva-trampo#readme",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "backup",
+    "auto-backup",
+    "version-control",
+    "time-machine",
+    "file-backup",
+    "salva-trampo",
+    "quick-save"
+  ],
+  "icon": "images/icon.png",
+  "activationEvents": [
+    "onCommand:salvaTrampo.enableAutoSave",
+    "onCommand:salvaTrampo.disableAutoSave"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "salvaTrampo.enableAutoSave",
+        "title": "Habilitar Salva Trampo"
+      },
+      {
+        "command": "salvaTrampo.disableAutoSave",
+        "title": "Desabilitar Salva Trampo"
+      }
+    ],
+    "configuration": {
+      "title": "Salva Trampo",
+      "properties": {
+        "salvaTrampo.doubleSaveThreshold": {
+          "type": "number",
+          "default": 3000,
+          "description": "Tempo limite em milissegundos para detectar salvamento duplo"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.15.0"
+  }
+}

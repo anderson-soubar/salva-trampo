@@ -1,0 +1,7 @@
+{
+  "extension.enable": "Habilitar Salva Trampo",
+  "extension.disable": "Desabilitar Salva Trampo",
+  "config.enabled": "Habilita ou desabilita a extensão Salva Trampo",
+  "config.backupFolder": "Pasta onde serão salvos os backups",
+  "config.doubleSaveThreshold": "Tempo máximo entre dois salvamentos para criar backup (ms)"
+} 

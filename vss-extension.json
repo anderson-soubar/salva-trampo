@@ -1,0 +1,45 @@
+{
+    "manifestVersion": 1,
+    "id": "salva-trampo",
+    "version": "0.0.1",
+    "name": "Salva Trampo",
+    "description": "Faz backup automático dos arquivos ao salvar, como uma máquina do tempo salvando versões do seu código",
+    "publisher": "anderson-soubar",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "categories": [
+        "Other"
+    ],
+    "icons": {
+        "default": "images/icon.png"
+    },
+    "files": [
+        {
+            "path": "extension.js"
+        },
+        {
+            "path": "package.json"
+        },
+        {
+            "path": "README.md"
+        },
+        {
+            "path": "LICENSE"
+        },
+        {
+            "path": "images",
+            "addressable": true
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    }
+} 
